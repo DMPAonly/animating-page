@@ -1,0 +1,233 @@
+body{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transition: transform 1s ease-in-out;
+}
+
+.icon-animate{
+    transform: translate(750px, 300px) rotate(1080deg);
+}
+
+.icon-para{
+    margin-left: 60px;
+    display: inline-block;
+    transition: opacity 1s ease-in-out;
+    font-weight: 400;
+}
+
+.icon-para-animate{
+    opacity: 0;
+}
+
+#left-column{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#right-column{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#login-section h1{
+    margin: 0;
+    font-size: 50px;
+}
+
+.house-img{
+    padding: 10px;
+    border-radius: 30px;
+    width: 100vh;
+    height: 100vh;
+    transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+
+.house-img-animate{
+    width: 0vh;
+    height: 0vh;
+}
+
+.field{
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.field:focus{
+    border: 2px solid purple;
+    outline: none;
+    box-shadow: 5px 5px 5px 2px lightblue;
+}
+
+#custom-checkbox{
+    display: inline-block;
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+#custom-checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#checkbox-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+#custom-checkbox:hover input ~ #checkbox-label{
+    background-color: #ccc;
+}
+
+#custom-checkbox input:checked ~ #checkbox-label {
+    background-color: purple;
+}
+
+#checkbox-label:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#custom-checkbox input:checked ~ #checkbox-label:after {
+    display: block;
+}
+
+#custom-checkbox #checkbox-label:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#login-btn{
+    width: 300px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s linear;
+}
+
+#login-btn:active{
+    transform: scale(0.70);
+}
+
+.input-container{
+    position: relative;
+}
+
+.input-container label{
+    position: absolute;
+    padding: 5px 5px;
+    color: gray;
+}
+
+.animate-text{
+    font-size: 24px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.animate-small{
+    font-size: 12px;
+}
+
+#btn-text{
+   display: inline-block;
+   transition: transform 1s ease, opacity 1s ease;
+}
+
+.btn-animate{
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+.loader {
+    opacity: 0;
+    margin: auto;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid violet; /* Blue */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: spin 1s linear infinite;
+    transition: opacity 1s linear;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader-come {
+    opacity: 1;
+}
+
+.login-after{
+    opacity: 0;
+}
+
+.result{
+    z-index: 1;
+    margin: auto;
+    width: 0;
+    height: 0;
+    transition: width 1s ease-in-out, height 1s ease-in-out;
+    border-radius: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.result-animate{
+    width: 80%;
+    height: 100%;
+}
+
+
+
+
+

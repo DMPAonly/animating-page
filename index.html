@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="left-column">
+        <div>
+            <img src="architecture-building-office-skyscraper-house (1).svg" class="icon">
+            <p class="icon-para">Regions<br>Mortgage</p>
+        </div>
+        <div id="login-section">
+          <h1>Welcome Back</h1>
+          <p>Sign in to your Regions MyMortgage account.</p>
+          <form onsubmit="handleSubmit(event)">
+              <div class="input-container" id="id-container">
+                <label for="id-field" class="animate-text">Online ID</label>
+                <input class="field" id="id-field" type="text" onfocus="handleFocus(event)" required/>
+              </div>
+              <br></br>
+              <div class="input-container" id="password-container">
+                <label for="password-field" class="animate-text">Password</label>
+                <input class="field" id="password-field" type="password" onfocus="handleFocus(event)" required/>
+              </div>
+              <br></br>
+              <label for="checkbox" id="custom-checkbox">Remember Me
+                <input id="checkbox" type="checkbox"/>
+                <span id="checkbox-label"></span>
+              </label>
+              <br></br>
+              <button id="login-btn" type="submit" onclick="handleClick()">
+                <span id="btn-text">Login</span>
+              </button>
+          </form>
+        </div>
+    </div>
+    <div id="right-column">
+        <img class="house-img" src="house.jpg" alt="house"/>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
