@@ -57,3 +57,8 @@ function handleSubmit(event){
     setTimeout(getLoader, 600);
     setTimeout(packUp, 2000);
 }
+
+function passwordVisible(){
+    var x = document.getElementById('password-field');
+    x.type = 'text';
+}

@@ -225,6 +225,19 @@ body{
     height: 100%;
 }
 
+#password-btn{
+    position: absolute;
+    background: transparent;
+    right: 5px;
+    top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#password-btn:hover{
+    color: purple;
+}
+
 
 
 
